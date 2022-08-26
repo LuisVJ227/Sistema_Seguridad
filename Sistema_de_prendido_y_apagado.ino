@@ -4,7 +4,7 @@ int sensormg = 5;
 int buzzer = 8;
 int val = 0;
 int estado = 0;
-int hola = 0;
+int Dato = 0;
 
 void setup() 
 {
@@ -35,12 +35,6 @@ void loop()
   if (estado == 1)
   {
       if(val == 0)
-      {
-       {
-        hola = 0;
-        Serial.println(hola);
-        delay(200);
-       }
        {
         digitalWrite(led, HIGH);
         digitalWrite(buzzer, HIGH);
@@ -48,19 +42,17 @@ void loop()
         digitalWrite(led,LOW);
         digitalWrite(buzzer, LOW);
         delay(200);
+        Dato=
+        Serial.println(val);
+        delay(200);
        }
-      }
-       else
+      
+      else
        {
-         {
-          hola =1;
-          Serial.println(hola);
-          delay(200);
-         }
-         {
           digitalWrite(led,LOW);
           digitalWrite(buzzer,LOW);
-         }
+          Serial.println(val);
+          delay(200);
        }
   }
   else
@@ -68,4 +60,4 @@ void loop()
     digitalWrite(led,LOW);
     digitalWrite(buzzer,LOW);
    } 
- }
+}
