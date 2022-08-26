@@ -42,7 +42,6 @@ void loop()
         digitalWrite(led,LOW);
         digitalWrite(buzzer, LOW);
         delay(200);
-        Dato=
         Serial.println(val);
         delay(200);
        }
