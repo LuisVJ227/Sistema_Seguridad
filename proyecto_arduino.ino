@@ -39,17 +39,17 @@ void loop()
         Serial.println(val);
         digitalWrite(led, HIGH);
         digitalWrite(buzzer, HIGH);
-        delay(200);
+        delay(500);
         digitalWrite(led,LOW);
         digitalWrite(buzzer, LOW);
-        delay(200);
+        delay(500);
        }
        else
        {
         Serial.println(val);
         digitalWrite(led,LOW);
         digitalWrite(buzzer,LOW);
-        delay(200);
+        delay(1000);
        }
   }
   else
