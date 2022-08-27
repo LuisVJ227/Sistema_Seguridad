@@ -52,7 +52,7 @@ def llamar_sistema():
         if (a == 0):
             cont =+1
             if (cont <= 1):
-                #EnviarCorreo()
+                EnviarCorreo()
                 print('ALERTA')
         elif (a == 1):
             cont = 0
